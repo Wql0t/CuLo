@@ -46,7 +46,7 @@ int main() {
 
     Culo::start();
 
-    std::thread spinner_thread([]() {
+    std::thread pb_thread([]() {
         Culo::lb({"-", "--", "---", "----", "-----"}, CULO_YELLOW); 
     });
 
@@ -57,7 +57,7 @@ int main() {
 
     Culo::stop();
 
-    spinner_thread.join();
+    pb_thread.join();
 
     std::cout << "Готово!" << std::endl;
     return 0;
