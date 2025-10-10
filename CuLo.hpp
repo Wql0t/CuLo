@@ -1,5 +1,6 @@
 #ifndef CULO_HPP
 #define CULO_HPP
+#define CULO_WHITE "\033[37m"
 #define CULO_RED "\033[31m"
 #define CULO_GREEN "\033[32m"
 #define CULO_YELLOW "\033[33m"

@@ -66,6 +66,7 @@ int main() {
 
 ## Доступные цвета:
 
+- CULO_WHITE
 - CULO_RED
 - CULO_GREEN
 - CULO_YELLOW
@@ -74,7 +75,7 @@ int main() {
 - CULO_CYAN
 - CULO_RESET
 
-## cвои цвета
+## Cвои цвета
 Так как в функцию передаётся std::string, вы можете использовать свои ANSI-коды:
 
 ```cpp
