@@ -1,4 +1,4 @@
-## CuLo — Библиотека для отображения загрузки в терминале
+## CuLo — Библиотека для отображения индикатора загрузки в терминале
 
 - Простой и понятный API
 - Поддержка цветов (ANSI)
@@ -46,7 +46,7 @@ int main() {
 
     Culo::start();
 
-    std::thread spinner_thread([]() {
+    std::thread pb_thread([]() {
         Culo::lb({"-", "--", "---", "----", "-----"}, CULO_YELLOW); 
     });
 
@@ -57,7 +57,7 @@ int main() {
 
     Culo::stop();
 
-    spinner_thread.join();
+    pb_thread.join();
 
     std::cout << "Готово!" << std::endl;
     return 0;
@@ -80,3 +80,4 @@ int main() {
 ```cpp
 Culo::lb({"-", "/", "\\"}, "\033[95m");  // ярко-фиолетовый
 ```
+
